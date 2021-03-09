@@ -1,0 +1,17 @@
+[package]
+name = "kumandra-parachain-primitives"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2018"
+
+[dependencies]
+# Substrate dependencies
+sp-runtime = { git = "https://github.com/selendra/substrate", default-features = false, branch = "master" }
+sp-core = { git = "https://github.com/selendra/substrate", default-features = false, branch = "master" }
+
+[features]
+default = [ "std" ]
+std = [
+	"sp-runtime/std",
+	"sp-core/std"
+]
