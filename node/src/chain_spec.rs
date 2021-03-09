@@ -88,7 +88,15 @@ pub fn get_chain_spec(id: ParaId) -> ChainSpec {
 		vec![],
 		None,
 		None,
-		None,
+		Some(
+            serde_json::from_str(
+                "{
+            \"tokenDecimals\": 8,
+            \"tokenSymbol\": \"KMD\"
+        	}",
+            )
+            .expect("Provided valid json map"),
+        ),
 		Extensions {
 			relay_chain: "westend-dev".into(),
 			para_id: id.into(),
@@ -113,7 +121,15 @@ pub fn staging_test_net(id: ParaId) -> ChainSpec {
 		Vec::new(),
 		None,
 		None,
-		None,
+		Some(
+            serde_json::from_str(
+                "{
+            \"tokenDecimals\": 8,
+            \"tokenSymbol\": \"KMD\"
+        	}",
+            )
+            .expect("Provided valid json map"),
+        ),
 		Extensions {
 			relay_chain: "westend-dev".into(),
 			para_id: id.into(),
