@@ -56,7 +56,7 @@ parachain-runtime = { package = "kumandra-parachain-runtime", path = "../runtime
 kumandra-parachain-primitives = { path = "../primitives" }
 
 # Cumulus dependencies
-cumulus-cli = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
+cumulus-client-cli = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
 cumulus-client-consensus-relay-chain = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
 cumulus-client-collator = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
 cumulus-client-service = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
