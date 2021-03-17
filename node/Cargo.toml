@@ -24,49 +24,49 @@ hex-literal = "0.2.1"
 jsonrpc-core = "15.1.0"
 
 # Substrate dependencies
-sp-runtime = { git = "https://github.com/selendra/substrate", default-features = false, branch = "master" }
-sp-io = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-core = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-inherents = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-consensus = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-session = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-consensus = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-cli = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-client-api = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-executor = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-service = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-telemetry = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-transaction-pool = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-transaction-pool = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-network = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-basic-authorship = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-timestamp = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-blockchain = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-block-builder = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-trie = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-finality-grandpa = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-chain-spec = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-rpc = { git = "https://github.com/selendra/substrate", branch = "master" }
-sc-tracing = { git = "https://github.com/selendra/substrate", branch = "master" }
-sp-offchain = { git = "https://github.com/selendra/substrate", branch = "master" }
+sp-runtime = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth", default-features = false }
+sp-io = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-core = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-inherents = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-consensus = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-session = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-consensus = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-cli = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-client-api = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-executor = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-service = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-telemetry = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-transaction-pool = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-transaction-pool = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-network = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-basic-authorship = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-timestamp = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-blockchain = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-block-builder = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-trie = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-finality-grandpa = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-chain-spec = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-rpc = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sc-tracing = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
+sp-offchain = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }
 
 # Parachain dependencies
 parachain-runtime = { package = "kumandra-parachain-runtime", path = "../runtime" }
 kumandra-parachain-primitives = { path = "../primitives" }
 
 # Cumulus dependencies
-cumulus-cli = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-cumulus-client-consensus-relay-chain = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-cumulus-client-collator = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-cumulus-client-service = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-cumulus-client-network = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-cumulus-primitives-core = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
+cumulus-cli = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+cumulus-client-consensus-relay-chain = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+cumulus-client-collator = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+cumulus-client-service = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+cumulus-client-network = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+cumulus-primitives-core = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
 
 # Indracore dependencies
-indracore-primitives = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-indracore-service = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-indracore-cli = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
-indracore-parachain = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-dev" }
+indracore-primitives = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+indracore-service = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+indracore-cli = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
+indracore-parachain = { git = "https://github.com/selendra/indracore", branch = "v0.4.0-eth" }
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/selendra/substrate", branch = "master" }
+substrate-build-script-utils = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth" }

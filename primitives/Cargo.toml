@@ -6,8 +6,8 @@ edition = "2018"
 
 [dependencies]
 # Substrate dependencies
-sp-runtime = { git = "https://github.com/selendra/substrate", default-features = false, branch = "master" }
-sp-core = { git = "https://github.com/selendra/substrate", default-features = false, branch = "master" }
+sp-runtime = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth", default-features = false }
+sp-core = { git = "https://github.com/selendra/substrate", branch = "v2.0.4-eth", default-features = false }
 
 [features]
 default = [ "std" ]
